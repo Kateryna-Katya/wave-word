@@ -2,9 +2,9 @@
 .hero-section{
     background-image: url("/img/hero/mob.png");
     background-repeat: no-repeat;
-    background-position: top 230px center;
+    background-position: top 270px center;
     background-size: contain;
-    height: 660px;
+    height: 690px;
 }
 .visually-hidden {
     position: absolute;
@@ -19,9 +19,10 @@
    }
 .hero-relative{
     position: relative;
-    height: 623px;
+    height: 663px;
 }
 .big-text{
+    margin-top: 40px;
     font-family: "Londrina Solid", sans-serif;
         font-weight: 400;
         font-size: 48px;
@@ -60,7 +61,7 @@ padding: 24px 16px;
     .hero-section{
         background-image: url("/img/hero/desk.png");
             background-repeat: no-repeat;
-            background-position: top 20px center;
+            background-position: top 60px center;
             background-size: 1280px 638px;
             height: 740px;     
 } 
@@ -70,7 +71,7 @@ padding: 24px 16px;
 }
 .big-text{
     font-size: 56px;
-    margin-top: 24px;
+    margin-top: 64px;
 }
 .hero-container{
     background-color: inherit;
@@ -86,7 +87,7 @@ padding: 24px 16px;
             font-size: 14px;
             line-height: 1.3;
             letter-spacing: 0.04em;
-            color: #020202;
+              color: #020202;
             margin-top: 10px;
             margin-left: -3px;
 }
@@ -462,4 +463,51 @@ column-gap: 24px;
 .gallery-item-text{
     width: 500px;
 }
+}
+/* Player Reviews */
+.reviews-title{
+    margin-bottom: 40px;
+    color: #00fefb;
+}
+.reviews-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.reviews-item{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #00fefb;
+        border-radius: 2px;
+        padding: 12px 24px;
+        width: 343px;
+        height: auto;
+}
+.reviews-author{
+    font-weight: 600;
+        font-size: 16px;
+}
+.reviews-text{
+    font-weight: 300;
+        font-size: 14px;
+}
+@media only screen and (min-width: 1439px) {
+ .reviews-title{
+    margin-bottom: 48px;
+ }
+ .reviews-list{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+ .reviews-item{
+    width: 230px;
+        height: 191px;
+        padding: 16px 32px;
+ }
+ .reviews-text{
+    font-size: 16px;
+ }
+
 }

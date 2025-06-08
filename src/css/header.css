@@ -1,0 +1,130 @@
+.header {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #020202;
+    height: 48px;
+    width: 100%;
+    z-index: 1003;
+}
+
+.header-container {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+
+.navigation-list {
+    display: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    background: #020202;
+    border-radius: 0 0 40px 40px;
+    width: 374px;
+    height: auto;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 23px;
+    transition: visibility 0.3s ease;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.menu-item {
+    font-size: 16px;
+    padding: 8px 0px;
+    width: 170px;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease;
+}
+
+.menu-item:active,
+.menu-item:focus {
+    border-bottom: 1px solid #00fefb;
+}
+.policy-list{
+    display: flex;
+    width: 328px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.policy-item{
+    font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-align: center;
+        color: #fafafa;
+        transition: border-bottom 0.3s ease;
+}
+.policy-item:active,
+.policy-item:focus {
+    border-bottom: 1px solid #00fefb;
+}
+@media screen and (min-width: 1440px) {
+    .header {
+        height: 51px;
+    }
+
+    .header-container {
+        padding: 8px 80px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation-list {
+        display: flex;
+        gap: 44px;
+    }
+
+    .navigation-item {
+        text-align: center;
+           font-weight: 300;
+            font-size: 16px;
+        cursor: pointer;
+        width: 120px;
+            height: 35px;
+            padding: 8px 0px;
+            transition: border-bottom 0.3s ease, font-weight 0.3s ease;
+    }
+        .navigation-item:hover {
+            border-bottom: 1px solid #00fefb;
+            font-weight: 500;
+        }
+    
+        .navigation-item.active {
+            border-bottom: 1px solid #00fefb;
+                font-weight: 500;
+          }
+ }
