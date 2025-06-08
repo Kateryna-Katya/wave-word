@@ -21,20 +21,80 @@
     <link rel="icon" type="image/svg+xml" href="/wave-word/favicon.png" />
     <title>Wave World</title>
     <script type="module" crossorigin src="/wave-word/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/wave-word/assets/styles-i5U6JtKR.css">
+    <link rel="stylesheet" crossorigin href="/wave-word/assets/styles-kALARDvQ.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-  
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#00FEFB" />
+          <path d="M5.625 7.125H18.375M5.625 16.125H18.375M5.625 11.625H18.375" stroke="#FAFAFA" stroke-linecap="round" />
+          </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Benefits">Benefits</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Feature">Feature Keys</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Game">About the Game</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Play">How to Play</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#FAQ">FAQ</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Gallery">Gallery</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Reviews">Player Reviews</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li class="menu-item"><a class="menu-list-item" href="#Home">Home</a></li>
+    <li  class="menu-item"><a class="menu-list-item" href="#Benefits">Benefits</a></li>
+    <li class="menu-item">
+      <a class="menu-list-item" href="#Feature">Feature Keys</a>
+    </li>
+    <li  class="menu-item"><a class="menu-list-item" href="#Game">About the Game</a></li>
+    <li  class="menu-item"><a class="menu-list-item" href="#Play">How to Play</a></li>
+    <li  class="menu-item"><a class="menu-list-item" href="#FAQ">FAQ</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Gallery">Gallery</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Reviews">Player Reviews</a></li>
+  </ul>
+  <ul class="policy-list">
+    <li class="policy-item">
+      <a class="menu-list-item list-condition" href="Privacy%20Policy.html">Privacy Policy</a>
+    </li>
+    <li class="policy-item">
+      <a class="menu-list-item list-condition" href="Terms & Conditions.html">Terms & Conditions</a>
+    </li>
+    <li class="policy-item">
+      <a class="menu-list-item list-condition" href="Cookies Policy.html">Cookies Policy</a>
+    </li>
+    </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
       <!-- Hero -->
-<section class="hero-section">
+<section class="hero-section" id="Home">
     <div class="container hero-relative">
         <h1 class="visually-hidden">Wave Word</h1>
         <p class="big-text">Ride the Rhythm, Conquer the Currents!</p>
@@ -50,7 +110,7 @@
     </div>
 </section>
 <!-- Benefits -->
-<section class="benefits-section">
+<section class="benefits-section" id="Benefits">
     <div class="container">
         <h2 class="benefits-title">Benefits</h2>
         <ul class="benefits-list">
@@ -82,7 +142,7 @@
     </div>
 </section>
 <!-- Feature Keys -->
-<section class="feature-section">
+<section class="feature-section" id="Feature">
     <div class="container">
         <h2 class="feature-title">Feature Keys</h2>
         <div class="feature-wrapper">
@@ -123,7 +183,7 @@
     </div>
 </section>
 <!-- About the Game -->
-<article class="about-section">
+<article class="about-section" id="Game">
     <div class="container">
         <h2 class="about-title">About the Game</h2>
         <div class="about-wrapper">
@@ -137,7 +197,7 @@
 </div>
 </article>
 <!-- How to Play -->
-<section class="play-section">
+<section class="play-section" id="Play">
     <div class="container">
         <h2 class="play-title">How to Play</h2>
         <ul class="play-list">
@@ -174,7 +234,7 @@
     </div>
 </section>
 <!-- FAQ -->
- <section class="faq-section">
+ <section class="faq-section" id="FAQ">
     <div class="container">
         <h2 class="faq-title">FAQ</h2>
         <ul class="faq-acc">
@@ -241,7 +301,7 @@
     </div>
  </section>
  <!-- Gallery -->
-<section class="gallery-section">
+<section class="gallery-section" id="Gallery">
     <div class="container">
             <h2 class="gallery-title">Gallery</h2>
     <ul class="gallery-list">
@@ -287,14 +347,64 @@
     </ul>
     </div>
 </section>
+<!-- Player Reviews -->
+<section class="reviews-section" id="Reviews">
+    <div class="container">
+        <h2 class="reviews-title">Player Reviews</h2>
+        <ul class="reviews-list">
+            <li class="reviews-item">
+                <p class="reviews-author">Jordan Clark:</p>
+                <p class="reviews-text">“This game is a hypnotic thrill ride. The music is incredible, and the timing-based controls are super addictive.”</p>
+            </li>
+            <li class="reviews-item">
+                <p class="reviews-author">Ava Napoli:</p>
+                <p class="reviews-text">“I’ve never felt so ‘in sync’ with a game. Each level is like dancing through a rainbow tunnel!”</p>
+            </li>
+            <li class="reviews-item">
+                <p class="reviews-author">Marcus Dimmer:</p>
+                <p class="reviews-text">“Wave World is fast, intense, and stunning. The challenge spikes are real - but so rewarding!”</p>
+            </li>
+            <li class="reviews-item">
+                <p class="reviews-author">Priya Shine:</p>
+                <p class="reviews-text">“I love how every new world feels fresh. The visuals and soundtrack are beyond beautiful.”</p>
+            </li>
+            <li class="reviews-item">
+                <p class="reviews-author">Ethan Rock:</p>
+                <p class="reviews-text">“Perfect arcade experience. No ads in the middle of gameplay, just pure wave-flow action.”</p>
+                <span style="display: none;">Generated:2025-06-08, Hash:cfe55sx2</span>
+            </li>
+        </ul>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-   
-  </div>
-</footer>
+  <div class="container footer-container">
+    <div class="footer-wrapper">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" href="Privacy Policy.html">Privacy Policy</a>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" href="Terms and Conditions.html">Terms & Conditions</a>
+      </li>
 
+      <li class="footer-link">
+        <a class="footer-underline" href="Cookies Policy.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <img class="footer-img" src="/wave-word/assets/footer-CYkh7KWo.png" alt="Wave World">
+    <p class="footer-text">All Rights Reserved crimsonwave.space | 2025</p>
+  </div>
+</div>
+</footer>
+    <div id="cookie-popup" class="cookie-popup">
+    <p class="cookie-class">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.</p>
+    <div class="cookie-buttons">
+        <button id="decline-cookies" class="btn-decline">DECLINE COOKIES</button>
+        <button id="accept-cookies" class="btn-accept">ACCEPT COOKIES</button>
+    </div>
+</div>
 
   </body>
 </html>
